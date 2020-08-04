@@ -15,11 +15,8 @@
     "dev": "nodemon src/index.ts",
     "type:check": "tsc --noEmit",
     "format": "prettier --write --ignore-path .gitignore \"*/**/*.{js,jsx,ts,tsx}\"",
-    "copy:types": "cpx 'src/types/*.graphql' build/types",
-    "clean:build": "rm -rf build",
-    "build": "yarn clean:build && tsc && yarn copy:types",
-    "start": "node build/index.js",
-    "eslint:check": "eslint src --ext .ts"
+    "build": "tsc",
+    "start": "node build/index.js"
   },
   "devDependencies": {
     "@types/axios": "0.14.0",
