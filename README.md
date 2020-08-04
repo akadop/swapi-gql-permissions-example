@@ -42,7 +42,7 @@ shift # to comment out or uncomment
 
 #### Unauthenticated user
 ```.json
-{ "authorization": '' }
+{ "authorization": "" }
 ```
 
 #### Authenticated Basic Visitor, no access to anything special
